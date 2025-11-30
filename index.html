@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="" content="BlueHorizon Solutions">
+  <!--Favicon-->
+  <link href="assets/favicon/icon.png" rel="icon">
+  <title>OneRound Pictures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="assets/icon/oneround.png" alt="OneRound" class="brand-logo">
+      </a>
+      <nav class="menu" aria-label="Main">
+        <a href="#directors">Directors</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="lang">
+        <a class="pill" href="#">ENG</a>
+        <a class="pill" href="#">SWA</a>
+      </div>
+    </div>
+  </header> 
+
+  <!-- Hero Slider -->  
+  <section class="hero" id="top">
+    <div class="slides" id="slider">
+        <article class="slide active">
+          <img src="assets/slides/oliver.png" alt="Film set">
+          <div class="hero-overlay"></div>
+          <a class="play-btn" href="#"></a>
+          <div class="hero-content container">
+            <div>
+              <div class="hero-title">The Crater</div>
+              <div class="hero-meta">Oliver Mhenga</div>
+            </div>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/slides/pablo.png" alt="Director framing shot">
+          <div class="hero-overlay"></div>
+          <a class="play-btn" href="#"></a>
+          <div class="hero-content container">
+            <div>
+              <div class="hero-title">Tequila Paradise</div>
+              <div class="hero-meta">Pablo Kimani</div>
+            </div>
+          </div>
+        </article>
+        <article class="slide">
+          <img src="assets/slides/corona.png" alt="City ride">
+          <div class="hero-overlay"></div>
+          <a class="play-btn" href="#"></a>
+          <div class="hero-content container">
+            <div>
+              <div class="hero-title">Corona Teasers</div>
+              <div class="hero-meta">Lufe</div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="hero-nav container">
+        <button class="arrow" id="prev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="arrow" id="next" aria-label="Next slide">
+          <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"></svg>
+        </button>
+      </div>
+  </section>  
+  
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eius nobis omnis tenetur, est iure officiis quaerat nisi 
+        quidem possimus consequatur, sequi et veniam! Hic veniam 
+        consectetur soluta voluptatum voluptate officiis.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2>Production Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Film Production</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius nobis omnis tenetur, est iure officiis quaerat nisi 
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Post-Production</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius nobis omnis tenetur, est iure officiis quaerat nisi 
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Creative Direction</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius nobis omnis tenetur, est iure officiis quaerat nisi 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Films Section Head -->  
+  <section class="section">
+    <div class="container">
+      <div class="eyebrow">Films and News</div>
+      <h2>OneRound Films Selection</h2>
+    </div>
+  </section>  
+  
+  <!-- Film Grid -->  
+  <div class="container">
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card" data-video="assets/videos/tequila.mp4">
+        <img src="assets/thumbnails/teq.jpg" alt="splash">
+        <div class="shade"></div>
+        <a class="play" href="#"></a>
+        <div class="label">
+          <div class="title">Tequila Paradise</div>
+          <div class="meta">Pablo Kimani</div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" data-video="assets/videos/palacio.mp4">
+        <img src="assets/thumbnails/palacio.png" alt="portrait">
+        <div class="shade"></div>
+        <a class="play" href="#"></a>
+        <div class="label">
+          <div class="title">Palace Crisis</div>
+          <div class="meta">Oliver Mhenga</div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" data-video="assets/videos/Heroes.mp4">
+        <img src="assets/thumbnails/sergio.png" alt="Levi's">
+        <div class="shade"></div>
+        <a class="play" href="#"></a>
+        <div class="label">
+          <div class="title">Levi's Heroes</div>
+          <div class="meta">Sebastian King</div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" data-video="assets/videos/corona.mp4">
+        <img src="assets/thumbnails/corona.jpg" alt="convertible">
+        <div class="shade"></div>
+        <a class="play" href="#"></a>
+        <div class="label">
+          <div class="title">Corona Teasers — Life</div>
+          <div class="meta">Lufe</div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card" data-video="assets/videos/nissan.mp4">
+        <img src="assets/thumbnails/nissan.png" rel="sky">
+        <div class="shade"></div>
+        <a class="play" href="#"></a>
+        <div class="label">
+          <div class="title">Nissan — Llamado</div>
+          <div class="meta">Alex St. Micheal</div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card" data-video="assets/videos/brahma.mp4">
+        <img src="assets/thumbnails/brahm.png" alt="kitchen scene">
+        <div class="shade"></div>
+        <a class="play" href="#"></a>
+        <div class="label">
+          <div class="title">Brahma — Wallace</div>
+          <div class="meta">Hermán Alma</div>
+        </div>
+      </article>
+    </div>
+  </div>  
+  
+  <!-- Directors Section -->  
+  <section class="directors" id="directors">
+    <div class="container">
+      <div class="eyebrow">Creative Team</div>
+      <h2> Directors</h2>
+      <div class="director-row">
+        <article class="director">
+          <img src="assets/team/castro.png" alt="crew">
+          <div class="bar">
+            <div class="name">Oliver Mhenga</div>
+            <div class="cta">Visit all films</div>
+          </div>
+        </article>
+        <article class="director">
+          <img src="assets/team/granados.png" alt="profile">
+          <div class="bar">
+            <div class="name">Augustus Gasta</div>
+            <div class="cta">Visit all films</div>
+          </div>
+        </article>
+        <article class="director">
+          <img src="assets/team/marcus_j.jpeg" alt="landscape">
+          <div class="bar">
+            <div class="name">Hermán Alma</div>
+            <div class="cta">Visit all films</div>
+          </div>
+        </article>
+      </div>
+      <div class="backtotop"><a href="#top">Back to top <i class="fas fa-arrow-up"></i></a></div>
+    </div>
+  </section>  
+
+  <!-- Footer -->  
+  <footer id="contact">
+    <div class="container foot-grid">
+      <div class="foot-col">
+        <h4>Quick links</h4>
+        <p><a href="#about">About</a><br>
+        <a href="#services">Production Services</a><br>
+        <a href="#news">News</a><br>
+        <a href="#contact">Contact</a></p>
+      </div>
+      <div class="foot-col">
+        <h4>Find Us</h4>
+        <p>
+          BlueNation, Creative Ave, Design District 2002<br>
+          Tel. +00 (5) 5085 2188 | +00 (6) 5085 2182<br>
+          hello@oneround.pictures</p>
+        <div class="social">
+          <a class="chip" href="#" aria-label="Instagram" title="Instagram">
+            <i class="fab fa-instagram" stroke="currentColor" stroke-width="1.6"></i>
+          </a>
+          <a class="chip" href="#" aria-label="Twitter" title="Twitter">
+            <i class="fab fa-x" stroke="currentColor" stroke-width="1.6"></i>
+          </a>
+          <a class="chip" href="#" aria-label="Behance" title="Behance">
+            <i class="fab fa-behance" stroke="currentColor" stroke-width="1.6"></i>
+          </a>
+          <a class="chip" href="#" aria-label="Youtube" title="Youtube">
+            <i class="fab fa-youtube" stroke="currentColor" stroke-width="1.6"></i>
+          </a>
+          <a class="chip" href="#" aria-label="TikTok" title="TikTok">
+            <i class="fab fa-tiktok" stroke="currentColor" stroke-width="1.6"></i>
+          </a>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          &copy; <span id="year"></span> OneRound Pictures | All Rights Reserved.<br>
+          Built with <i class="fas fa-heart" style="color: red;"></i> by BlueHorizon Solutions
+        </p>
+      </div>
+    </div>
+  </footer> 
+  
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-container">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <!--for YouTube/Vimeo-->
+      <iframe id="videoFrame" src="" frameborder="0" allowfullscreen style="display:none;"></iframe>
+      <!--for local MP4-->
+      <video id="videoPlayer" controls style="display:none; width:100%; height:100%;"></video>
+    </div>
+  </div>
+  
+  <!--Custom JS-->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
